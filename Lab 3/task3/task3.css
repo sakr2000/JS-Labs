@@ -1,0 +1,54 @@
+.container {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container input {
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 300px;
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+#converted {
+  text-transform: capitalize;
+  color: #9e0808;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container input:focus {
+  border: 2px solid #9e0808;
+  color: #9e0808;
+}
+
+#lowest::before,
+#greatest::before {
+  color: #9e0808;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#lowest::before {
+  content: "Second Lowest: ";
+}
+
+#lowest,
+#greatest {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#greatest::before {
+  content: "Second greatest: ";
+}

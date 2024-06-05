@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="task2.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Back to home</a>
+    </nav>
+    <h1>Count Tags, Classes and ID</h1>
+    <hr />
+    <div class="form">
+      <input
+        type="text"
+        id="TagValue"
+        placeholder="Enter Tag Name"
+        name="tag"
+      />
+      <input
+        type="text"
+        id="ClassValue"
+        placeholder="Enter Class Name"
+        name="class"
+      />
+      <input type="text" id="IDValue" placeholder="Enter ID Name" name="id" />
+      <input
+        type="text"
+        id="NameValue"
+        placeholder="Enter Name attribute value "
+        name="name"
+      />
+    </div>
+
+    <button id="btn" onclick="countAll()">Count</button>
+
+    <div class="output">
+      <div class="box">
+        <h3 id="tagsCount">Tag</h3>
+        <span>0</span>
+      </div>
+      <div class="box">
+        <h3 id="classCount">Class</h3>
+        <span>0</span>
+      </div>
+      <div class="box">
+        <h3 id="idCount">ID</h3>
+        <span>0</span>
+      </div>
+      <div class="box">
+        <h3 id="nameCount">Name</h3>
+        <span>0</span>
+      </div>
+    </div>
+    <script src="task2.js"></script>
+  </body>
+</html>

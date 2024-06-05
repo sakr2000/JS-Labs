@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="task3.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Back to home</a>
+    </nav>
+    <h1>
+      Task 3 | Array 2<sup>ed</sup> lowest and 2<sup>ed</sup> greatest & string
+      case converter
+    </h1>
+    <hr />
+
+    <div class="container">
+      <div class="task1">
+        <div id="output">
+          <h3>Array 2<sup>ed</sup> lowest and 2<sup>ed</sup> greatest</h3>
+          <input
+            type="text"
+            id="ArrayValues"
+            placeholder="Enter Array Values separated by commas"
+            oninput="handleArray(event.target.value)"
+          />
+          <div id="lowest">None</div>
+          <div id="greatest">None</div>
+        </div>
+      </div>
+
+      <div id="output">
+        <h3>String case converter</h3>
+        <div class="task2">
+          <input
+            type="text"
+            id="SearchValue"
+            placeholder="Enter the string"
+            oninput="handleString(event.target.value)"
+          />
+          <div id="converted">None</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="task3.js"></script>
+  </body>
+</html>

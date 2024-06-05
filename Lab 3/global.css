@@ -1,0 +1,36 @@
+body {
+  background-color: #c6c6c6;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+hr {
+  width: 80vw;
+  border: 1px solid #9e0808;
+  margin-bottom: 20px;
+}
+
+nav {
+  padding: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #9e0808;
+  background-color: #6c3a3a7c;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+a:hover {
+  background-color: #9e0808;
+  color: #fff;
+}
