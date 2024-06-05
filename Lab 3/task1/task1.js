@@ -13,7 +13,7 @@ divNumberInput.addEventListener("input", function (e) {
 });
 
 valueInput.addEventListener("input", function (e) {
-  var value = e.target.value;
+  var value = e.target.value - 1;
   var divs = document.querySelectorAll(".lamp");
   var status = document.querySelector(".status");
   if (value < 0 || value >= divs.length) {
