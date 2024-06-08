@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  padding: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+body {
+  justify-content: flex-start;
+}
+
+.container .marbel {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.container .marbel:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

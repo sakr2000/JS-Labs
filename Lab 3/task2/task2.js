@@ -1,26 +1,27 @@
+var tagHeader = document.getElementById("tagsCount");
+var nameHeader = document.getElementById("nameCount");
+var classHeader = document.getElementById("classCount");
+var idHeader = document.getElementById("idCount");
+
 function countTags(tag) {
-  var tagHeader = document.getElementById("tagsCount");
   var tags = document.getElementsByTagName(tag);
   tagHeader.innerHTML = tag;
   tagHeader.nextElementSibling.innerHTML = tags.length;
 }
 
 function countClasses(className) {
-  var classHeader = document.getElementById("classCount");
   var classes = document.getElementsByClassName(className);
   classHeader.innerHTML = className;
   classHeader.nextElementSibling.innerHTML = classes.length;
 }
 
 function countID(idName) {
-  var idHeader = document.getElementById("idCount");
   var id = document.getElementById(idName);
   idHeader.innerHTML = idName;
   idHeader.nextElementSibling.innerHTML = id == null ? "False" : "True";
 }
 
 function countName(name) {
-  var nameHeader = document.getElementById("nameCount");
   var names = document.getElementsByName(name);
   nameHeader.innerHTML = name;
   nameHeader.nextElementSibling.innerHTML = names.length;

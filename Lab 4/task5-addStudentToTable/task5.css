@@ -1,0 +1,144 @@
+body {
+  justify-content: flex-start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  height: 80vh;
+  width: 80vw;
+}
+
+.container .input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #9e0808;
+  gap: 10px;
+  align-self: center;
+  transition: 0.3s;
+}
+
+.error {
+  color: red;
+  font-size: small;
+}
+
+.container .input-form:hover {
+  box-shadow: 0 0 15px #9b7575;
+}
+
+.container .input-form input {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  margin: 10px;
+  width: 300px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.container .input-form input:focus {
+  border: 2px solid #9e0808;
+}
+
+.container .input-form button {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #9e0808;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+.container .input-form button:hover {
+  background-color: white;
+  color: #9e0808;
+  border: 1px solid #9e0808;
+  cursor: pointer;
+}
+
+.container .input-form button:active {
+  transform: scale(0.9);
+}
+
+.container .table {
+  border-radius: 10px;
+  gap: 10px;
+  align-self: flex-start;
+  max-width: 700px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+.container .table h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container .table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.container .table table th,
+.container .table table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container .table table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.container .table table th {
+  background-color: #9e0808;
+  color: white;
+}
+
+.container .table table td {
+  color: #9e0808;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .table table td button {
+  background-color: #9e0808;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-control.error input {
+  border: 2px solid red;
+}
+
+.form-control.success input {
+  border: 2px solid green;
+}
