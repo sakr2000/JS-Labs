@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 20px;
+  background-color: #000000b7;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #9e0808;
+  border-radius: 10px;
+}
